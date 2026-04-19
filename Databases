@@ -1,21 +1,26 @@
 <h1>Databases Artifact</h1>
 
 <h2>Artifact Description</h2>
-<p>PASTE HERE</p>
+<p>This artifact is an Android-based Event Management Application originally developed in CS-360: Mobile Architecture & Programming. The application allows users to create accounts, log in, and manage events through a local SQLite database, supporting full CRUD (Create, Read, Update, Delete) functionality. The application also includes optional SMS notifications for event reminders. This system supports user-centered decision-making by enabling individuals to organize, track, and manage important events efficiently through a structured and accessible interface.</p>
 
 <h2>Enhancements Implemented</h2>
-<p>PASTE HERE</p>
+<p>To improve this artifact for my ePortfolio, I focused on optimizing database design, improving data integrity, enhancing performance, and strengthening overall system reliability. I refactored the SQLite database schema to improve structure and organization and strengthened input validation to prevent invalid or incomplete data from being stored. Data retrieval queries were optimized to enhance application performance, and data handling between the user interface and database layers was improved.
+In addition, I refactored database-related code for better readability and maintainability and added logging to support debugging and system monitoring. Enhancements were also made to the event management interface to improve validation, error handling, and overall user experience. For example, input validation and error handling were implemented to ensure that required fields are completed and that invalid inputs do not cause application failures.
+</p>
 
 <h2>Enhanced Code</h2>
-<pre>
-PASTE YOUR HERE
+<pre>These enhancements resulted in a more efficient, reliable, and scalable application. They also improved the user experience by ensuring accurate data entry and faster retrieval of event information. A key design trade-off in this enhancement process was balancing query performance with code readability and maintainability. While more complex queries could improve performance further, I prioritized structured and readable code to ensure long-term scalability and ease of maintenance. Additionally, input validation improvements reflect a security-focused approach by reducing the risk of invalid or potentially harmful data being processed by the system.
+The original database implementation provided basic CRUD functionality but lacked input validation, structured schema constraints, and performance optimization. The enhanced version improves reliability and maintainability by adding input validation to ensure data integrity, structuring the database schema with appropriate constraints, incorporating logging for debugging and monitoring, and optimizing queries for faster and more efficient data retrieval
 </pre>
 
 <h2>Skills Demonstrated</h2>
-<p>PASTE HERE</p>
+<p>This artifact demonstrates skills in database design and normalization, as well as the implementation of CRUD operations using SQLite. It also reflects experience in mobile application development using Android and the application of data validation and integrity enforcement techniques. In addition, the work highlights abilities in code refactoring and performance optimization, along with debugging and system testing to ensure reliability and functionality.</p>
 
 <h2>Alignment to Program Outcomes</h2>
-<p>PASTE HERE</p>
+<p>This artifact aligns with the program outcomes by demonstrating the ability to solve data management challenges that improve user interaction and support effective decision-making. It reflects the design and implementation of a complete application that integrates frontend and backend systems, as well as the effective use of development tools and database technologies to enhance system performance. The work also demonstrates the evaluation and improvement of system performance, structure, and data handling, along with the ability to communicate technical improvements through structured documentation and application </p>
 
 <h2>Reflection</h2>
-<p>PASTE HERE</p>
+<p>Enhancing this artifact improved my understanding of how databases support real-world applications. I learned that proper data structure, validation, and query optimization directly impact both performance and user experience.
+One challenge I faced was improving database performance while maintaining simplicity in application design. I addressed this by testing different query approaches and refining the database structure while keeping the code readable and maintainable.
+Additionally, implementing validation and logging helped me better understand how to design systems that are both reliable and secure. This experience strengthened my ability to manage data effectively and develop applications that meet both technical and user n
+</p>
