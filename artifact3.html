@@ -1,26 +1,62 @@
-<h1>Databases Artifact</h1>
-
 <h2>Artifact Description</h2>
-<p>This artifact is an Android-based Event Management Application originally developed in CS-360: Mobile Architecture & Programming. The application allows users to create accounts, log in, and manage events through a local SQLite database, supporting full CRUD (Create, Read, Update, Delete) functionality. The application also includes optional SMS notifications for event reminders. This system supports user-centered decision-making by enabling individuals to organize, track, and manage important events efficiently through a structured and accessible interface.</p>
+<p>
+This artifact is an Android-based Event Management Application originally developed in CS-360. The application allows users to create accounts, log in, and manage events through a local SQLite database, supporting full CRUD functionality. The application also includes optional SMS notifications for event reminders. This system supports user-centered decision-making by enabling individuals to organize and manage important events efficiently.
+</p>
 
 <h2>Enhancements Implemented</h2>
-<p>To improve this artifact for my ePortfolio, I focused on optimizing database design, improving data integrity, enhancing performance, and strengthening overall system reliability. I refactored the SQLite database schema to improve structure and organization and strengthened input validation to prevent invalid or incomplete data from being stored. Data retrieval queries were optimized to enhance application performance, and data handling between the user interface and database layers was improved.
-In addition, I refactored database-related code for better readability and maintainability and added logging to support debugging and system monitoring. Enhancements were also made to the event management interface to improve validation, error handling, and overall user experience. For example, input validation and error handling were implemented to ensure that required fields are completed and that invalid inputs do not cause application failures.
+<p>
+To improve this artifact, I focused on optimizing database design, improving data integrity, enhancing performance, and strengthening system reliability. I refactored the SQLite schema, improved input validation, and optimized queries for better performance. I also enhanced the connection between the user interface and the database layer and added logging for debugging and monitoring.
+</p>
+
+<p>
+Additionally, improvements were made to the event management interface, including validation and error handling to ensure required fields are completed and invalid input does not cause failures.
 </p>
 
 <h2>Enhanced Code</h2>
-<pre>These enhancements resulted in a more efficient, reliable, and scalable application. They also improved the user experience by ensuring accurate data entry and faster retrieval of event information. A key design trade-off in this enhancement process was balancing query performance with code readability and maintainability. While more complex queries could improve performance further, I prioritized structured and readable code to ensure long-term scalability and ease of maintenance. Additionally, input validation improvements reflect a security-focused approach by reducing the risk of invalid or potentially harmful data being processed by the system.
-The original database implementation provided basic CRUD functionality but lacked input validation, structured schema constraints, and performance optimization. The enhanced version improves reliability and maintainability by adding input validation to ensure data integrity, structuring the database schema with appropriate constraints, incorporating logging for debugging and monitoring, and optimizing queries for faster and more efficient data retrieval
-</pre>
+
+<pre><code>
+private boolean validateEvent(String title, String date) {
+    if (title.isEmpty()) {
+        Toast.makeText(this, "Title is required", Toast.LENGTH_SHORT).show();
+        return true;
+    }
+
+    if (date.isEmpty()) {
+        Toast.makeText(this, "Date is required", Toast.LENGTH_SHORT).show();
+        return true;
+    }
+
+    return false;
+}
+
+// UX Improvement
+private void clearFields() {
+    etEventId.setText("");
+    etTitle.setText("");
+    etDate.setText("");
+}
+</code></pre>
+
+<h3>Code Screenshot</h3>
+<img src="projectthreesnap.jpg" width="700">
+
+<h3>Code Explanation</h3>
+<p>
+These enhancements improved both data validation and user experience. The validation method ensures required fields are completed, preventing invalid data from being stored in the database. The clearFields method improves usability by resetting inputs after operations are completed. Together, these improvements enhance data integrity, reduce user errors, and improve system reliability.
+</p>
 
 <h2>Skills Demonstrated</h2>
-<p>This artifact demonstrates skills in database design and normalization, as well as the implementation of CRUD operations using SQLite. It also reflects experience in mobile application development using Android and the application of data validation and integrity enforcement techniques. In addition, the work highlights abilities in code refactoring and performance optimization, along with debugging and system testing to ensure reliability and functionality.</p>
+<p>
+This artifact demonstrates skills in database design, normalization, and CRUD operations using SQLite. It also reflects experience in Android development, data validation, code refactoring, performance optimization, debugging, and system testing.
+</p>
 
 <h2>Alignment to Program Outcomes</h2>
-<p>This artifact aligns with the program outcomes by demonstrating the ability to solve data management challenges that improve user interaction and support effective decision-making. It reflects the design and implementation of a complete application that integrates frontend and backend systems, as well as the effective use of development tools and database technologies to enhance system performance. The work also demonstrates the evaluation and improvement of system performance, structure, and data handling, along with the ability to communicate technical improvements through structured documentation and application </p>
+<p>
+This artifact demonstrates the ability to solve data management challenges that improve user interaction and support decision-making. It reflects the design of a full application integrating frontend and backend systems, the use of development tools and database technologies, and the ability to evaluate and improve system performance and structure.
+</p>
 
 <h2>Reflection</h2>
-<p>Enhancing this artifact improved my understanding of how databases support real-world applications. I learned that proper data structure, validation, and query optimization directly impact both performance and user experience.
-One challenge I faced was improving database performance while maintaining simplicity in application design. I addressed this by testing different query approaches and refining the database structure while keeping the code readable and maintainable.
-Additionally, implementing validation and logging helped me better understand how to design systems that are both reliable and secure. This experience strengthened my ability to manage data effectively and develop applications that meet both technical and user n
+<p>
+Enhancing this artifact improved my understanding of how databases support real-world applications. I learned that data structure, validation, and query optimization directly impact both performance and user experience. One challenge was improving performance while maintaining simplicity, which I addressed by refining queries and keeping code structured and maintainable. This experience strengthened my ability to build reliable and efficient applications.
 </p>
+
