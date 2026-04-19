@@ -12,7 +12,9 @@ In addition, I developed a Python-based security module to demonstrate the pract
 
 <h2>Enhanced Code</h2>
 <pre>
-PASTE YOUR HERE
+These enhancements significantly improved the system’s ability to securely handle user data, reduce vulnerabilities, and support safer interactions for end users. By implementing hashing, encryption, and validation, the system now protects sensitive information and reduces the risk of common attacks such as data exposure and injection vulnerabilities.
+A key design trade-off in this process was balancing strong security measures with system usability and performance. While encryption and validation increase protection, they can also introduce additional processing overhead. I addressed this by implementing efficient algorithms and limiting validation to essential fields to maintain system performance while improving security.
+
 </pre>
 
 <h2>Skills Demonstrated</h2>
